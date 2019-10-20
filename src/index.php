@@ -1,12 +1,13 @@
 <?php
 
-// Параметры для подключения
+
 $db_host = "185.136.166.20"; 
-$db_user = "test"; // Логин БД
-$db_password = "toster"; // Пароль БД
-$db_base = "Dev_db"; // Имя БД
-$db_table = "DB_insert_rows"; // Имя Таблицы БД
-// Create connection
+$db_user = "test"; 
+$db_password = "toster"; 
+$db_base = "Dev_db"; 
+$db_table = "DB_insert_rows";
+
+
 $link = mysqli_connect($db_host, $db_user, $db_password, $db_base);
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -17,6 +18,7 @@ if (!mysqli_query($link, $query)) {
 } else {
 echo "Thanks.";
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -30,272 +32,166 @@ echo "Thanks.";
   </head>
 
   <body>
-    <button type="button" name="button" class="kz__menu-button">
-      <div class="kz__menu-button__text">Me</div>
-      <div class="kz__menu-button__text">nu</div>
+    <button type="button" name="button" class="menu-button">
+      <div class="menu-button__text">МЕ</div>
+      <div class="menu-button__text">НЮ</div>
     </button>
 
-    <div class="kz__registartion-button__container">
-      <button type="button" name="button" class="kz__registartion-button">
-        <span class="kz__registartion-button--general">Registration</span>
-        <span class="kz__registartion-button--hovered">Price €590</span>
+    <div class="registartion-button__container">
+      <button type="button" name="button" class="registartion-button">
+        <span class="registartion-button--general">Регистрация</span>
+        <span class="registartion-button--hovered">Регистрация</span>
       </button>
     </div>
 
-    <div class="kz__header">
-      <a href="#" class="kz__header__title">
-        <img src="images/tuff_title.svg" alt="Tuff" class="kz__logo-img">
-      </a>
+    <div class="overview">
+      <div class="overview__top-screen">
+        <div class="overview__top-screen__heading">
+          <div class="overview__top-screen__heading__container">
+            <div class="overview__top-screen__heading__container__logo">
+              <button type="button" name="button" class="logo-button">
+                <span class="logo-button--general">CRyPT</span>
+                <span class="logo-button--hovered">Супермаркет Криптовалют</span>
+              </button>
+              
+            </div>
+          </div>
+          <div class="overview__top-screen__heading__container--empty"></div>
+        </div>
     </div>
 
-    <div class="kz__overview">
-      <div class="kz__overview__top-screen">
-        <div class="kz__overview__top-screen__heading">
-          <div class="kz__overview__top-screen__heading__container">
-            <div class="kz__overview__top-screen__heading__container__price-wrapper">
-              <img src="images/dotted-rectangle.svg" alt="Dotted rectangle" class="kz__dotted-rectangle-img">
-              <div class="kz__overview__top-screen__heading__container__price">
-                Price €590
-              </div>
-            </div>
-          </div>
-          <div class="kz__overview__top-screen__heading__wrapper">
-            <h2 class="kz__overview__top-screen__heading__text">
-              20-25 Sept + 18-19 Oct
-            </h2>
-          </div>
-          <div class="kz__overview__top-screen__heading__container--empty"></div>
-        </div>
-        <div class="kz__overview__top-screen__content">
-          <div class="kz__overview__top-screen__content__heading">
-            <h3 class="kz__overview__top-screen__content__heading__text">
-              What can I get out of participating in the training?
-            </h3>
-          </div>
-          <img src="images/wave.svg" alt="Wave" class="kz__wave">
-          <div class="kz__overview__top-screen__content__info">
-            <div class="kz__overview__top-screen__content__info__text">
-              Participants leave the course with the courage and self-awareness to
-              have totally different conversations with their employees or
-              colleagues that draw out the motivation, responsibility, and
-              development in their teams.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="kz__overview__middle-screen">
-        <div class="kz__overview__middle-screen__info">
-          <p class="kz__overview__middle-screen__info__first-p">
-            The course consists of four days of intensive training, facilitated
-            by one of our certified leadership trainers. It begins with two
-            consecutive days where you learn the basics of a coaching leadership
-            mindset and its core abilities. After putting these new abilities
-            into practice back at work, you return for the last two days which
-            deepen the training. Included in the price is a 30-minute coaching
-            conversation with a Tuff coach one month after you complete the
-            course.
+      <div class="overview__middle-screen">
+        <div class="overview__middle-screen__info">
+          <p class="overview__middle-screen__info__first-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
           </p>
           <p>
-            The overall theme is a coaching mindset, which translates into
-            different kinds of conversations such as feedback conversations,
-            coaching conversations and relationship conversations. You’ll get a
-            wealth of new tools and practices that you can apply directly. The
-            training is based on a methodology developed by TUFF over more than
-            twenty years and promises to deliver lasting results.
+            Vitae tortor condimentum lacinia quis vel eros. Vel turpis nunc eget lorem dolor. 
+            Quisque id diam vel quam. Augue neque gravida in fermentum et sollicitudin ac orci. 
+            Quis vel eros donec ac odio. Mauris in aliquam sem fringilla ut morbi tincidunt. 
+            Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. 
           </p>
         </div>
-        <h3 class="kz__overview__middle-screen__heading">
-          Content overview
+        <h3 class="overview__middle-screen__heading">
+          Получай пассивный доход на колебаниях курса
         </h3>
       </div>
 
-      <div class="kz__overview__bottom-screen">
-        <div class="kz__overview__bottom-screen__heading">
-          <h2 class="kz__overview__bottom-screen__heading__text">
-            You will discover
+      <div class="overview__bottom-screen">
+        <div class="overview__bottom-screen__heading">
+          <h2 class="overview__bottom-screen__heading__text">
+            Дополнительный Доход
           </h2>
-          <img src="images/ellipse.svg" alt="Ellipse" class="kz__ellipse-img">
         </div>
-        <div class="kz__overview__bottom-screen__info">
-          <ul class="kz__overview__bottom-screen__info__list">
-            <li class="kz__overview__bottom-screen__info__list__item">
-              How to be a catalyst for your employees/colleagues taking more
-              responsibility and ownership for the business
+        <div class="overview__bottom-screen__info">
+          <ul class="overview__bottom-screen__info__list">
+            <li class="overview__bottom-screen__info__list__item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.s
             </li>
-            <li class="kz__overview__bottom-screen__info__list__item">
-              How to avoid defaulting to solving problems, giving advice, and
-              being solely responsible so others can step into their power
+            <li class="overview__bottom-screen__info__list__item">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+            ut aliquip ex ea commodo consequat. 
             </li>
-            <li class="kz__overview__bottom-screen__info__list__item">
-              How to have difficult conversations in a way that empowers others
+            <li class="overview__bottom-screen__info__list__item">
+              Duis aute irure dolor in reprehenderit 
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             </li>
-            <li class="kz__overview__bottom-screen__info__list__item">
-              How to have effective feedback conversations that lead to real shifts
+            <li class="overview__bottom-screen__info__list__item">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
             </li>
-            <li class="kz__overview__bottom-screen__info__list__item">
-              Your leadership strengths and blind spots
+            <li class="overview__bottom-screen__info__list__item">
+              Quis vel eros donec ac odio. Mauris in aliquam sem fringilla ut morbi tincidunt. 
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="kz__header">
-      <a href="#" class="kz__header__title">
-        <img src="images/tuff_title.svg" alt="Tuff" class="kz__logo-img">
-      </a>
-    </div>
-
-    <div class="kz__testimonials">
-      <div class="kz__testimonials__heading">
-        <img src="images/quotes.svg" alt="Quotes" class="kz__quotes-img">
-        <h2 class="kz__testimonials__heading__text">Testimonials</h2>
+    <div class="about">
+      <div class="about__heading">
+        <h2 class="about__heading__text">Платформа CRyPT</h2>
       </div>
-      <div class="kz__testimonials__countries">
-        <div class="kz__testimonials__countries__country">
-          <div class="kz__testimonials__countries__country__img">
-            <img src="images/dotted-rectangle.svg" alt="Dotted rectangle" class="kz__dotted-rectangle-img">
-            <img src="images/UK.svg" alt="UK" class="kz__flag-img">
-          </div>
-          <div class="kz__testimonials__countries__country__info">
-            <h3 class="kz__testimonials__countries__country__info__heading">
-              Antonia Gineva,
+      <div class="about__content">
+        <div class="about__content__text">
+          <div class="about__content__text__info">
+            <h3 class="about__content__text__info__heading">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               <br>
-              Legal and Compliance Officer at EM Bonds,
-              <br>
-              England
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </h3>
-            <p class="kz__testimonials__countries__country__info__text">
-              Therese is an experienced Tuff coach and trainer and is also an
-              accredited facilitator in, among other things, The Human Element
-              and Motivational Interviewing. She has a natural capacity to
-              relate to and challenge managers with an engineering background
-              like hers.
+            <p class="about__content__text__info__text">
+              Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis.
+              Scelerisque eleifend donec pretium vulputate. Tellus cras adipiscing enim 
+              eu turpis egestas pretium aenean. Vitae et leo duis ut diam quam.  
             </p>
           </div>
         </div>
-        <div class="kz__testimonials__countries__country">
-          <div class="kz__testimonials__countries__country__img">
-            <img src="images/dotted-rectangle.svg" alt="Dotted rectangle" class="kz__dotted-rectangle-img">
-            <img src="images/Sweden.svg" alt="Sweden" class="kz__flag-img">
-          </div>
-          <div class="kz__testimonials__countries__country__info">
-            <h3 class="kz__testimonials__countries__country__info__heading">
-              Richard Kronfält,
-              <br>
-              Global Head of Delivery at Alite International,
-              <br>
-              Sweden
+        <div class="about__content__text">
+          <div class="about__content__text__info">
+            <h3 class="about__content__text__info__heading">
+              Aliquet risus feugiat in ante metus dictum at. 
             </h3>
-            <p class="kz__testimonials__countries__country__info__text">
-              I would recommend Tuff Leadership Training to any company that
-              aspires to be a modern, Agile organisation, and to all managers
-              and leaders
+            <p class="about__content__text__info__heading__text">
+              Nulla pellentesque dignissim enim sit amet venenatis. 
+              Pellentesque dignissim enim sit amet venenatis urna cursus eget. 
+              Scelerisque felis imperdiet proin fermentum leo.
             </p>
           </div>
         </div>
-        <div class="kz__testimonials__countries__country">
-          <div class="kz__testimonials__countries__country__img">
-            <img src="images/dotted-rectangle.svg" alt="Dotted rectangle" class="kz__dotted-rectangle-img">
-            <img src="images/Portugal.svg" alt="Portugal" class="kz__flag-img">
-          </div>
-          <div class="kz__testimonials__countries__country__info">
-            <h3 class="kz__testimonials__countries__country__info__heading">
-              Dunia Reverter,
-              <br>
-              Group Head of Customer and Operational Efficiency at Arrow Global
-              Group Plc International
-              <br>
-              Portugal
+        <div class="about__content__text">
+          <div class="about__content__text__info">
+            <h3 class="about__content__text__info__heading">
+              Malesuada proin libero nunc consequat interdum. 
             </h3>
-            <p class="kz__testimonials__countries__country__info__text">
-              Distinguishing the “soft side,” how being “tough” can be an act of
-              kindness. A framework to be more intentional about the
-              conversations I have.
+            <p class="about__content__text__info__heading__text">
+              Cras sed felis eget velit aliquet. Massa tincidunt dui ut ornare lectus. 
+              Sollicitudin tempor id eu nisl nunc mi ipsum faucibus. 
+              Potenti nullam ac tortor vitae purus faucibus ornare suspendisse. 
+              Accumsan in nisl nisi scelerisque eu ultrices.
             </p>
           </div>
         </div>
       </div>
-      <div class="kz__testimonials__sony">
-        <img src="images/sony.svg" alt="Sony" class="kz__sony-img">
-        <div class="kz__testimonials__sony__info">
-          <div class="kz__testimonials__sony__info__heading">
-            Eva Lorentzon,
-            <br>
-            formerly Learning & Development Specialist at Sony Mobile
-            <br>
-            (now at King, also a Tuff customer)
+      <div class="about__bonuses">
+        <div class="about__bonuses__info">
+          <div class="about__bonuses__info__heading">
+            Бонусы за регистрацию
           </div>
-          <div class="kz__testimonials__sony__info__text">
-            What I mostly appreciate about Tuff Leadership Training is their
-            hands-on, practical training that makes a difference in behaviour
-            immediately. They are also excellent partners to HR and always very
-            generous with sharing material, thoughts and the research they work
-            with.Tuff is always on my top three list because they are very
-            passionate about contributing to better workplaces by breaking
-            traditional mindsets about leaders and employees and instead empower
-            everyone to be responsible and contribute.
+          <div class="testimonials__sony__info__text">
+            Pretium viverra suspendisse potenti nullam ac tortor vitae purus. 
+            Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. 
+            Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. 
+            Tellus orci ac auctor augue mauris augue. Tellus orci ac auctor augue mauris augue. 
+            Sit amet venenatis urna cursus eget. Ullamcorper morbi tincidunt ornare massa eget 
+            egestas. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. 
+            Volutpat blandit aliquam etiam erat velit. 
+            Viverra orci sagittis eu volutpat odio facilisis mauris sit amet.
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="kz__footer">
-      <div class="kz__footer__social">
-        <div class="kz__footer__social__wrapper">
-          <img src="images/line.svg" alt="Line" class="kz__line-img">
-          <div class="kz__footer__social__info">
-            <h3 class="kz__footer__social__info__heading">
-              Contact
-            </h3>
-            <div class="kz__footer__social__info__text">
-              <p class="kz__footer__social__info__text__first-p">
-                Kyiv, UBI Conference Hall
-                <br>
-                September 20-21 + October 18-19
-              </p>
-              <p>
-                info@tuffledarskapstraning.se
-                <br>
-                (096) 151 15 15
-                <br>
-                (096) 151 15 15
-              </p>
-            </div>
+    <footer class="footer">
+      <div class="footer__form">
+        <form class="footer__form__container" action="form.php" method="post">
+          <h2 class="footer__form__heading">Регистрация</h2>
+          <div class="footer__form__fields-wrapper">
+            <input type="text" name='name' id='name' placeholder="Ваше имя" class="footer__form__field footer__form__field--name">
+            <input type="text" name='phone' id='phone' placeholder="Номер телефона" class="footer__form__field footer__form__field--name">
+            <input type="email" name='email' id='email' placeholder="Ваш e-mail" class="footer__form__field">
           </div>
-        </div>
-
-        <div class="kz__footer__social__wrapper">
-          <img src="images/line.svg" alt="Line" class="kz__line-img">
-          <div class="kz__footer__social__info">
-            <h3 class="kz__footer__social__info__heading">
-              Follow
-            </h3>
-            <div class="kz__footer__social__info__social-medias">
-              <a href="#" class="kz__footer__social__info__social-medias__link"><img src="images/facebook.svg" alt="Facebook" class="kz__social-media-img"></a>
-              <a href="#" class="kz__footer__social__info__social-medias__link"><img src="images/instagram.svg" alt="Instagram" class="kz__social-media-img"></a>
-              <a href="#" class="kz__footer__social__info__social-medias__link"><img src="images/twitter.svg" alt="Twitter" class="kz__social-media-img"></a>
-            </div>
+          <div class="footer__form__button-wrapper">
+            <button type="submit" name="button" class="footer__form__button">Отправить</button>
           </div>
-        </div>
-        <img src="images/beetroot-academy.svg" alt="Beetroot Academy" class="kz__beetroot-academy-img">
-      </div>
-      <div class="kz__footer__form">
-        <form action="index.php" method="post">
-          <label for="name">Name:</label>
-          <input name="name" id="name" type="text" />
-          
-          <label for="phone">Phone:</label>
-          <input name="phone" id="phone" type="text" />
-
-          <label for="email">Email:</label>
-          <input name="email" id="email" type="text" />
-          
-          <input type="hidden" name="process" value="1" />
-          <input type="submit" value="Submit" />
         </form>
-
       </div>
     </footer>
   </body>
