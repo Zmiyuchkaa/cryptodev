@@ -409,21 +409,26 @@ h2, h3, p {
   line-height: 1.6;
   opacity: 0.8;
 }
+
 .footer__form__field--name {
   margin-right: 50px;
 }
+
 .footer__form__field--message-wrapper {
   display: flex;
 }
+
 .footer__form__field--message {
   flex-basis: 572px;
   flex: auto;
   margin-bottom: 121px;
 }
+
 .footer__form__button-wrapper {
   display: flex;
   justify-content: flex-end;
 }
+
 .footer__form__button-wrapper .footer__form__button {
   background-color: white;
   border-radius: 0;

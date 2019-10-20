@@ -1,3 +1,25 @@
+<?php
+
+$db_host = "185.136.166.20"; 
+$db_user = "test"; 
+$db_password = "toster"; 
+$db_base = "Dev_db"; 
+$db_table = "DB_insert_rows";
+
+
+$link = mysqli_connect($db_host, $db_user, $db_password, $db_base);
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$query = "INSERT INTO DB_insert_rows (name, phone, email ) VALUES('$name', '$phone', '$email')";
+if (!mysqli_query($link, $query)) {
+  die('An error occurred.');
+} else {
+echo "Thanks.";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -158,18 +180,15 @@
 
     <footer class="footer">
       <div class="footer__form">
-        <form class="footer__form__container" action="form.php" method="post">
+        <form class="footer__form__container" action="index.php" method="post">
           <h2 class="footer__form__heading">Регистрация</h2>
           <div class="footer__form__fields-wrapper">
-            <input type="text" placeholder="Your Name" class="footer__form__field footer__form__field--name">
-            <input type="text" placeholder="Your Phone" class="footer__form__field footer__form__field--name">
-            <input type="email" placeholder="Your e-mail" class="footer__form__field">
-          </div>
-          <div class="footer__form__field--message-wrapper">
-            <input type="text" placeholder="Your message" class="footer__form__field footer__form__field--message">
+            <input type="text" name='name' id='name' placeholder="Ваше имя" class="footer__form__field footer__form__field--name">
+            <input type="text" name='phone' id='phone' placeholder="Номер телефона" class="footer__form__field footer__form__field--name">
+            <input type="email" name='email' id='email' placeholder="Ваш e-mail" class="footer__form__field">
           </div>
           <div class="footer__form__button-wrapper">
-            <button type="submit" name="button" class="footer__form__button">Send</button>
+            <button type="submit" name="button" class="footer__form__button">Отправить</button>
           </div>
         </form>
       </div>
