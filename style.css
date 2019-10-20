@@ -8,7 +8,7 @@ h2, h3, p {
   margin-block-end: 0;
 }
 
-.kz__menu-button {
+.menu-button {
   position: fixed;
   margin: auto 0;
   top: 200px;
@@ -22,8 +22,8 @@ h2, h3, p {
   padding: 2px 0;
   z-index: 1000;
 }
-.kz__menu-button__text {
-  color: #FFF6E3;
+.menu-button__text {
+  color: white;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 24px;
@@ -32,24 +32,24 @@ h2, h3, p {
   padding-right: 8px;
   border-bottom: 3px solid #FFF6E3;
 }
-.kz__menu-button__text:first-of-type {
-  border-top: 3px solid #FFF6E3;
+.menu-button__text:first-of-type {
+  border-top: 3px solid white;
 }
-.kz__menu-button__text:first-of-type:hover {
+.menu-button__text:first-of-type:hover {
   padding-right: 35px;
 }
-.kz__menu-button__text:last-of-type:hover {
+.menu-button__text:last-of-type:hover {
   padding-right: 35px;
 }
 
-.kz__registartion-button__container {
+.registartion-button__container {
   position: fixed;
   right: 0;
   top: 46px;
   z-index: 2;
 }
-.kz__registartion-button__container .kz__registartion-button {
-  background-color: #FFFFFF;
+.registartion-button__container .registartion-button {
+  background-color: white;
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 12px 10px 0 #000000;
@@ -58,81 +58,102 @@ h2, h3, p {
   width: 237px;
   height: 50px;
 }
-.kz__registartion-button__container .kz__registartion-button--general {
+
+.registartion-button__container .registartion-button--general {
   line-height: 1.2;
-  color: #000000;
 }
-.kz__registartion-button__container .kz__registartion-button--hovered {
+
+.registartion-button__container .registartion-button--hovered {
   line-height: 1.5;
-  color: #FFF6E3;
   display: none;
 }
-.kz__registartion-button__container:hover .kz__registartion-button {
-  background-color: #EA4747;
+.registartion-button__container:hover .registartion-button {
+  background-color: #68b861;
 }
-.kz__registartion-button__container:hover .kz__registartion-button--general {
+.registartion-button__container:hover .registartion-button--general {
   display: none;
 }
-.kz__registartion-button__container:hover .kz__registartion-button--hovered {
+.registartion-button__container:hover .registartion-button--hovered {
   display: inline;
 }
 
-.kz__header {
-  background-color: #FFF6E3;
-  padding: 46px 0 72px;
-}
-
-.kz__overview {
-  background-color: #FFF6E3;
+.overview {
+  background-image: url(images/bg.jpeg);
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-size: 100%;
   font-family: "Montserrat", sans-serif;
 }
-.kz__overview__top-screen {
+.overview__top-screen {
   min-height: 100vh;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.kz__overview__top-screen__heading {
+.overview__top-screen__heading {
   display: flex;
   flex-flow: row wrap;
   position: relative;
-  min-height: 500px;
+  min-height: 50px;
   margin-bottom: 140px;
 }
-.kz__overview__top-screen__heading__container {
-  background-color: #0030DA;
-  flex-grow: 7;
+.overview__top-screen__heading__container {
+  flex-grow: 10;
   position: relative;
 }
-.kz__overview__top-screen__heading__container__price-wrapper {
+.overview__top-screen__heading__container__price-wrapper {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.kz__overview__top-screen__heading__container .kz__dotted-rectangle-img {
-  position: absolute;
-  bottom: 0;
-  right: 215px;
-  width: 144px;
-  height: 100px;
-  object-fit: cover;
+
+.overview__top-screen__heading__container__price-wrapper .def-button {
+  background-color: white;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 12px 10px 0 #000000;
+  font-weight: 600;
+  font-size: 64px;
+  width: 400px;
+  height: 150px;
 }
-.kz__overview__top-screen__heading__container__price {
+
+.overview__top-screen__heading__container__price-wrapper .def-button--general {
+  line-height: 0.3;
+}
+
+.overview__top-screen__heading__container__price-wrapper .def-button--hovered {
+  line-height: 0.05;
+  font-size: 34px;
+  display: none;
+}
+.overview__top-screen__heading__container__price-wrapper:hover .def-button {
+  background-color: #68b861;
+}
+.overview__top-screen__heading__container__price-wrapper:hover .def-button--general {
+  display: none;
+}
+.overview__top-screen__heading__container__price-wrapper:hover .def-button--hovered {
+  display: inline;
+}
+
+.overview__top-screen__heading__container__price {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 322px;
   height: 65px;
   background-color: #FFF6E3;
-  box-shadow: 14px 14px 0 #EA4747;
-  color: #0030DA;
+  box-shadow: 14px 14px 0 #68b861;
+  color: #353635;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 1.6;
+  font-size: 28px;
+  line-height: 1;
   text-align: center;
 }
-.kz__overview__top-screen__heading__wrapper {
+.overview__top-screen__heading__wrapper {
   position: absolute;
   margin: auto;
   top: 0;
@@ -143,26 +164,26 @@ h2, h3, p {
   align-items: center;
   justify-content: center;
 }
-.kz__overview__top-screen__heading__text {
+.overview__top-screen__heading__text {
   font-weight: bold;
   font-size: 100px;
-  color: #FFF6E3;
+  color: #353635;
   line-height: 1.25;
-  -webkit-text-stroke: 1px #EA4747;
-  text-shadow: 4px 4px #EA4747;
+  -webkit-text-stroke: 1px #68b861;
+  text-shadow: 4px 4px white;
   max-width: 640px;
 }
-.kz__overview__top-screen__heading__container--empty {
-  flex-grow: 4;
+.overview__top-screen__heading__container--empty {
+  flex-grow: 6;
 }
-.kz__overview__top-screen__content {
+.overview__top-screen__content {
   display: flex;
   flex-flow: row;
   min-height: 380px;
   position: relative;
   margin-bottom: 110px;
 }
-.kz__overview__top-screen__content__heading {
+.overview__top-screen__content__heading {
   flex: auto;
   flex-basis: 712px;
   display: flex;
@@ -170,14 +191,14 @@ h2, h3, p {
   justify-content: center;
   padding: 10px;
 }
-.kz__overview__top-screen__content__heading__text {
+.overview__top-screen__content__heading__text {
   max-width: 495px;
-  color: #0030DA;
+  color: #353635;
   font-weight: bold;
   font-size: 40px;
   line-height: 1.6;
 }
-.kz__overview__top-screen__content .kz__wave {
+.overview__top-screen__content .__wave {
   position: absolute;
   margin: auto;
   top: 0;
@@ -185,86 +206,83 @@ h2, h3, p {
   left: 0;
   right: 0;
 }
-.kz__overview__top-screen__content__info {
+.overview__top-screen__content__info {
   flex: auto;
   flex-basis: 712px;
-  background-color: #EA4747;
+  background-color: #68b861;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
 }
-.kz__overview__top-screen__content__info__text {
+.overview__top-screen__content__info__text {
   max-width: 445px;
-  color: #FFF6E3;
+  color: white;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.6;
 }
-.kz__overview__middle-screen {
-  background-color: #0030DA;
+.overview__middle-screen {
+  background-color: #353635;
   min-height: 100vh;
   height: 100%;
   display: flex;
   justify-content: center;
   padding: 90px 114px 0 141px;
 }
-.kz__overview__middle-screen__info {
+.overview__middle-screen__info {
   max-width: 720px;
   flex: auto;
   margin-bottom: 140px;
-  color: #FFFFFF;
+  color: #353635;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.6;
 }
-.kz__overview__middle-screen__info__first-p {
+.overview__middle-screen__info__first-p {
   margin-bottom: 40px;
 }
-.kz__overview__middle-screen__heading {
+.overview__middle-screen__heading {
   flex-basis: 157px;
   flex-grow: auto;
   flex-shrink: 0;
-  margin-left: 139px;
-  color: #EA4747;
+  margin-left: 50px;
+  color: #68b861;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 1.6;
+  font-size: 60px;
+  text-shadow: 4px 4px white;
+  -webkit-text-stroke: 1px #353635;
 }
-.kz__overview__bottom-screen {
-  background-color: #FFF6E3;
+.overview__bottom-screen {
   padding: 90px 118px 150px 121px;
 }
-.kz__overview__bottom-screen__heading {
+.overview__bottom-screen__heading {
   max-width: 425px;
   position: relative;
   padding-right: 85px;
   margin-bottom: 60px;
 }
-.kz__overview__bottom-screen__heading__text {
+.overview__bottom-screen__heading__text {
   font-weight: 800;
   font-size: 100px;
   line-height: 1.2;
-  color: #0030DA;
+  color: #353635;
+  line-height: 1.25;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 4px 4px #68b861;
 }
-.kz__overview__bottom-screen__heading .kz__ellipse-img {
-  width: 36px;
-  height: 36px;
-  position: absolute;
-  right: 0;
-  bottom: 25px;
-}
-.kz__overview__bottom-screen__info {
+
+.overview__bottom-screen__info {
   display: flex;
   justify-content: flex-end;
 }
-.kz__overview__bottom-screen__info__list {
-  list-style-image: url("../images/list_style.svg");
+.overview__bottom-screen__info__list {
+  list-style-image: url("images/3d.png");
   max-width: 905px;
   width: 100%;
 }
-.kz__overview__bottom-screen__info__list__item {
-  color: #0030DA;
+.overview__bottom-screen__info__list__item {
+  color: #353635;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.6;
@@ -272,31 +290,28 @@ h2, h3, p {
   width: 100%;
 }
 
-.kz__testimonials {
-  background-color: #FFF6E3;
+.testimonials {
   padding-left: 142px;
   font-family: "Montserrat", sans-serif;
+  
 }
-.kz__testimonials__heading {
+.testimonials__heading {
   display: flex;
   justify-content: center;
   margin-bottom: -35px;
   position: relative;
 }
-.kz__testimonials__heading .kz__quotes-img {
-  max-width: 100px;
-  position: absolute;
-  left: 53px;
-  bottom: 5px;
-}
-.kz__testimonials__heading__text {
+
+.testimonials__heading__text {
   font-weight: 800;
   font-size: 120px;
   line-height: 1.2;
-  color: #0030DA;
+  color: #353635;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 4px 4px #68b861;
 }
-.kz__testimonials__countries {
-  background-color: #0030DA;
+.testimonials__countries {
+  background-color: #909190;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -304,165 +319,105 @@ h2, h3, p {
   min-height: 1160px;
   padding: 120px 0;
 }
-.kz__testimonials__countries__country {
+.testimonials__countries__country {
   display: flex;
 }
-.kz__testimonials__countries__country__img {
-  position: relative;
-  margin-right: 83px;
-  max-width: 144.15px;
-  max-height: 137.29px;
-}
-.kz__testimonials__countries__country__img .kz__dotted-rectangle-img {
-  width: 144.15px;
-  height: 137.29px;
-}
-.kz__testimonials__countries__country__img .kz__flag-img {
-  position: absolute;
-  right: -40px;
-  bottom: 30px;
-  width: 120px;
-  height: 60px;
-}
-.kz__testimonials__countries__country__info {
+
+.testimonials__countries__country__info {
   max-width: 515px;
   flex-grow: 0;
-  color: #FFF6E3;
+  color: white;
   font-size: 18px;
   line-height: 1.6;
 }
-.kz__testimonials__countries__country__info__heading {
+.testimonials__countries__country__info__heading {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.kz__testimonials__sony {
+
+.testimonials__sony {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: flex-end;
   margin-top: 57px;
   padding-bottom: 158px;
+  flex-direction: row;
 }
-.kz__testimonials__sony__info {
+
+.testimonials__sony__info {
   margin-top: 96px;
-  color: #0030DA;
+  color: #353635;
   font-size: 18px;
   line-height: 1.6;
   max-width: 592px;
 }
-.kz__testimonials__sony__info__heading {
-  font-weight: bold;
-  margin-bottom: 51px;
-}
-
-.kz__footer {
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-}
-.kz__footer__social {
-  flex-grow: 1;
-  background-color: #fdfdfd;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 60px 60px 60px 100px;
-}
-.kz__footer__social__wrapper {
-  display: flex;
-  align-items: flex-start;
-  max-width: 391px;
-}
-.kz__footer__social .kz__line-img {
-  max-width: 99px;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-.kz__footer__social__info {
-  max-width: 272px;
-  margin-bottom: 40px;
-}
-.kz__footer__social__info__heading {
-  margin-bottom: 35px;
-  font-weight: 500;
-  font-size: 24px;
+.testimonials__sony__info__heading {
+  font-weight: 800;
+  font-size: 100px;
   line-height: 1.2;
-  text-transform: uppercase;
-  color: #EA4747;
-}
-.kz__footer__social__info__text {
-  color: #0030DA;
-  font-size: 18px;
-  line-height: 1.6;
-}
-.kz__footer__social__info__text__first-p {
+  color: #353635;
+  line-height: 1.25;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 4px 4px #68b861;
   margin-bottom: 20px;
 }
-.kz__footer__social__info__social-medias {
-  display: flex;
-  align-items: center;
-  margin-bottom: 60px;
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  margin-left: 10%;
 }
-.kz__footer__social__info__social-medias__link {
-  margin-right: 22px;
-}
-.kz__footer__social__info__social-medias__link:last-of-type {
-  margin-right: 0;
-}
-.kz__footer__social__info__social-medias__link .kz__social-media-img {
-  width: 50px;
-  height: 50px;
-}
-.kz__footer__social__info__social-medias__link .kz__social-media-img:hover {
-  filter: hue-rotate(90deg);
-}
-.kz__footer__form {
-  flex-grow: 2;
+
+.footer__form {
   background-color: #343434;
   padding: 55px 60px 137px;
 }
-.kz__footer__form__heading {
-  color: #EA4747;
+.footer__form__heading {
+  color: #68b861;
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
   margin-bottom: 83px;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 4px 4px #353635;
 }
-.kz__footer__form__fields-wrapper {
+.footer__form__fields-wrapper {
   display: flex;
   margin-bottom: 84px;
 }
-.kz__footer__form__field {
+.footer__form__field {
   background-color: #343434;
   border: none;
-  border-bottom: 1px solid #FFF6E3;
+  border-bottom: 1px solid white;
   flex: auto;
   height: 30px;
-  color: #FFF6E3;
+  color: white;
   font-size: 18px;
   line-height: 1.6;
 }
-.kz__footer__form__field::placeholder {
-  color: #FFF6E3;
+.footer__form__field::placeholder {
+  color: white;
   font-size: 18px;
   line-height: 1.6;
   opacity: 0.8;
 }
-.kz__footer__form__field--name {
+.footer__form__field--name {
   margin-right: 50px;
 }
-.kz__footer__form__field--message-wrapper {
+.footer__form__field--message-wrapper {
   display: flex;
 }
-.kz__footer__form__field--message {
+.footer__form__field--message {
   flex-basis: 572px;
   flex: auto;
   margin-bottom: 121px;
 }
-.kz__footer__form__button-wrapper {
+.footer__form__button-wrapper {
   display: flex;
   justify-content: flex-end;
 }
-.kz__footer__form__button-wrapper .kz__footer__form__button {
-  background-color: #FFFFFF;
+.footer__form__button-wrapper .footer__form__button {
+  background-color: white;
   border-radius: 0;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -473,4 +428,9 @@ h2, h3, p {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.6;
+  cursor: pointer;
+}
+
+.footer__form__button:hover {
+  background-color: #68b861;
 }
