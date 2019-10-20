@@ -61,7 +61,7 @@ echo "Thanks.";
           </div>
           <div class="kz__overview__top-screen__heading__wrapper">
             <h2 class="kz__overview__top-screen__heading__text">
-              20-21 Sept + 18-19 Oct
+              20-25 Sept + 18-19 Oct
             </h2>
           </div>
           <div class="kz__overview__top-screen__heading__container--empty"></div>
@@ -282,17 +282,20 @@ echo "Thanks.";
         <img src="images/beetroot-academy.svg" alt="Beetroot Academy" class="kz__beetroot-academy-img">
       </div>
       <div class="kz__footer__form">
-        <form class="kz__footer__form__container" action="index.php" method="post">
-          <h2 class="kz__footer__form__heading">Get in touch</h2>
-          <div class="kz__footer__form__fields-wrapper">
-            <input type="text" name='name' placeholder="Your Name" class="kz__footer__form__field kz__footer__form__field--name">
-            <input type="text" name='phone' placeholder="Your Phone" class="kz__footer__form__field kz__footer__form__field--name">
-            <input type="email" name='email' placeholder="Your e-mail" class="kz__footer__form__field">
-          </div>
-          <div class="kz__footer__form__button-wrapper">
-            <button type="submit" name="button" class="kz__footer__form__button">Send</button>
-          </div>
+        <form action="index.php" method="post">
+          <label for="name">Name:</label>
+          <input name="name" id="name" type="text" />
+          
+          <label for="phone">Phone:</label>
+          <input name="phone" id="phone" type="text" />
+
+          <label for="email">Email:</label>
+          <input name="email" id="email" type="text" />
+          
+          <input type="hidden" name="process" value="1" />
+          <input type="submit" value="Submit" />
         </form>
+
       </div>
     </footer>
   </body>
