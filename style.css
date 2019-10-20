@@ -103,13 +103,13 @@ h2, h3, p {
   flex-grow: 10;
   position: relative;
 }
-.overview__top-screen__heading__container__price-wrapper {
+.overview__top-screen__heading__container__logo {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.overview__top-screen__heading__container__price-wrapper .def-button {
+.overview__top-screen__heading__container__logo .logo-button {
   background-color: white;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -120,22 +120,22 @@ h2, h3, p {
   height: 150px;
 }
 
-.overview__top-screen__heading__container__price-wrapper .def-button--general {
+.overview__top-screen__heading__container__logo .logo-button--general {
   line-height: 0.3;
 }
 
-.overview__top-screen__heading__container__price-wrapper .def-button--hovered {
+.overview__top-screen__heading__container__logo .logo-button--hovered {
   line-height: 0.05;
   font-size: 34px;
   display: none;
 }
-.overview__top-screen__heading__container__price-wrapper:hover .def-button {
+.overview__top-screen__heading__container__logo:hover .logo-button {
   background-color: #68b861;
 }
-.overview__top-screen__heading__container__price-wrapper:hover .def-button--general {
+.overview__top-screen__heading__container__logo:hover .logo-button--general {
   display: none;
 }
-.overview__top-screen__heading__container__price-wrapper:hover .def-button--hovered {
+.overview__top-screen__heading__container__logo:hover .logo-button--hovered {
   display: inline;
 }
 
@@ -234,7 +234,7 @@ h2, h3, p {
   max-width: 720px;
   flex: auto;
   margin-bottom: 140px;
-  color: #353635;
+  color: white;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.6;
@@ -253,15 +253,18 @@ h2, h3, p {
   text-shadow: 4px 4px white;
   -webkit-text-stroke: 1px #353635;
 }
+
 .overview__bottom-screen {
   padding: 90px 118px 150px 121px;
 }
+
 .overview__bottom-screen__heading {
   max-width: 425px;
   position: relative;
   padding-right: 85px;
   margin-bottom: 60px;
 }
+
 .overview__bottom-screen__heading__text {
   font-weight: 800;
   font-size: 100px;
@@ -276,6 +279,7 @@ h2, h3, p {
   display: flex;
   justify-content: flex-end;
 }
+
 .overview__bottom-screen__info__list {
   list-style-image: url("images/3d.png");
   max-width: 905px;
@@ -290,19 +294,20 @@ h2, h3, p {
   width: 100%;
 }
 
-.testimonials {
+.about {
   padding-left: 142px;
   font-family: "Montserrat", sans-serif;
   
 }
-.testimonials__heading {
+.about__heading {
   display: flex;
   justify-content: center;
   margin-bottom: -35px;
   position: relative;
+  
 }
 
-.testimonials__heading__text {
+.about__heading__text {
   font-weight: 800;
   font-size: 120px;
   line-height: 1.2;
@@ -310,8 +315,9 @@ h2, h3, p {
   -webkit-text-stroke: 1px white;
   text-shadow: 4px 4px #68b861;
 }
-.testimonials__countries {
-  background-color: #909190;
+
+.about__content {
+  background-color: #353635;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -319,23 +325,25 @@ h2, h3, p {
   min-height: 1160px;
   padding: 120px 0;
 }
-.testimonials__countries__country {
+
+.about__content__text {
   display: flex;
 }
 
-.testimonials__countries__country__info {
+.about__content__text__info {
   max-width: 515px;
   flex-grow: 0;
   color: white;
   font-size: 18px;
   line-height: 1.6;
 }
-.testimonials__countries__country__info__heading {
+.about__content__text__info__heading {
   font-weight: bold;
   margin-bottom: 10px;
+  text-shadow: 4px 4px black;
 }
 
-.testimonials__sony {
+.about__bonuses {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -344,14 +352,14 @@ h2, h3, p {
   flex-direction: row;
 }
 
-.testimonials__sony__info {
+.about__bonuses__info {
   margin-top: 96px;
   color: #353635;
   font-size: 18px;
   line-height: 1.6;
   max-width: 592px;
 }
-.testimonials__sony__info__heading {
+.about__bonuses__info__heading {
   font-weight: 800;
   font-size: 100px;
   line-height: 1.2;
