@@ -1,6 +1,5 @@
 <?php
 
-
 $db_host = "185.136.166.20"; 
 $db_user = "test"; 
 $db_password = "toster"; 
@@ -181,7 +180,7 @@ echo "Thanks.";
 
     <footer class="footer">
       <div class="footer__form">
-        <form class="footer__form__container" action="form.php" method="post">
+        <form class="footer__form__container" action="index.php" method="post">
           <h2 class="footer__form__heading">Регистрация</h2>
           <div class="footer__form__fields-wrapper">
             <input type="text" name='name' id='name' placeholder="Ваше имя" class="footer__form__field footer__form__field--name">
