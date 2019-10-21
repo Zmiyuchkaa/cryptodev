@@ -14,11 +14,9 @@ $email = $_POST['email'];
 $query = "INSERT INTO DB_insert_rows (name, phone, email ) VALUES('$name', '$phone', '$email')";
 if (!mysqli_query($link, $query)) {
   die('An error occurred.');
-} else {
-echo "Thanks.";
-}
+} 
 
-?>
+;?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
